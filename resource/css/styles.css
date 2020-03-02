@@ -19,7 +19,7 @@
     --secondary-color: #eee;
     --deselect-color : #878b90;
     --highlight-color: #007aff;
-    --dark-color: #000;
+    --bg-color: #000;
     --bar-color : #131313;
     --btn-color: #fffc30;
 }
@@ -29,9 +29,8 @@
     --secondary-color: #131313;
     --deselect-color : #878b90;
     --highlight-color: #007aff;
-    --dark-color: #fff;
+    --bg-color: #fff;
     --bar-color : #fff;
-    --btn-color: #fffc30;
 }
 
 :target:before{
@@ -51,7 +50,7 @@ html {
     font-family: var(--body-font);
     font-size: 16px;
     color: var(--main-color);
-    background: var(--dark-color);
+    background: var(--bg-color);
     font-weight: 250;
 }
 
@@ -94,7 +93,9 @@ p{
 }
 
 .logo {
-    background-image: url(/resource/img/common/logo.svg);
+    -webkit-mask-image: url(/resource/img/common/logo.svg);
+    mask-image: url(/resource/img/common/logo.svg);
+    background-color: var(--secondary-color);
     width: 8rem;
     height: 1.875rem;
     fill: var(--main-color);
