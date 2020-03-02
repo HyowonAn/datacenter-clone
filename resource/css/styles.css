@@ -20,15 +20,16 @@
     --deselect-color : #878b90;
     --highlight-color: #007aff;
     --bg-color: #000;
+    --logo-color : #fff;
     --bar-color : #131313;
     --btn-color: #fffc30;
 }
 
-[data-theme="dark"] {
+[data-theme="light"] {
     --main-color: #000;
     --secondary-color: #131313;
     --deselect-color : #878b90;
-    --highlight-color: #007aff;
+    --logo-color : #0084ff;
     --bg-color: #fff;
     --bar-color : #fff;
 }
@@ -95,7 +96,7 @@ p{
 .logo {
     -webkit-mask-image: url(/resource/img/common/logo.svg);
     mask-image: url(/resource/img/common/logo.svg);
-    background-color: var(--secondary-color);
+    background-color: var(--logo-color);
     width: 8rem;
     height: 1.875rem;
     fill: var(--main-color);
